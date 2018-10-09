@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <button class="btn1">Remove all p elements</button>
+    
+    
+    
+    <h4>This is a paragraph</h4>
+    <h4>This is another paragraph</h4>
+    <button class="btn2">Remove all h elements</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    
+    
+        $(document).ready(function(){
+
+      $("button.btn1").click(function(){
+ 
+      $("p").detach();
+ 
+                });
+    
+     
+        
+        $("button.btn2").click(function(){
+   
+      $("h4").remove();
+    
+                });
+    
+    
+                });
+               
+</script>
+  
+

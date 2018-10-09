@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<button>Alert the value of each list item</button>
+
+    <input type="text" id="form" placeholder="Name">
+<ol>
+  <li>Hyderabad</li>
+  <li>Mumbai</li>
+  <li>Chennai</li>
+  <li>Delhi</li>
+</ol>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("li").each(function(){
+            alert($(form).val())
+            alert($(this).text())
+        });
+    });
+});
+    </script>
+</html>
+

@@ -1,0 +1,41 @@
+<html>
+<head>
+    
+    
+    </head>
+<body>
+    
+    Title           <input type="text" id="name" /><span id="display"></span><br>  
+    First Name      <input type="text" id="name1" /><span id="display1"></span><br> 
+    Second Name     <input type="text" id="name2" /><span id="display2"></span><br> 
+    Date of birth   <input type="Date" id="name3" /><span id="display3"></span><br> 
+    Gender                                                                   <br>       
+                    <input type="radio"id="name4" /><span id="display4"></span> Male   <br> 
+                    <input type="radio"id="name5" /><span id="display5"></span> Female  
+    
+    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $('#name').keyup(function () {
+    $('#display').text($(this).val());
+    });
+    
+     $('#name1').keyup(function () {
+    $('#display1').text($(this).val());
+    });
+      $('#name2').keyup(function () {
+    $('#display2').text($(this).val());
+    });
+      $('#name3').keyup(function () {
+    $('#display3').text($(this).val());
+    });
+      $('#name4').keyup(function () {
+    $('#display4').text($(this).val());
+    });
+      $('#name5').keyup(function () {
+    $('#display5').text($(this).val());
+    });
+    
+    
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<p id="p2">Hello</p>
+
+<button>Click me</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#p2").css("color", "orange")
+            .slideUp(2000)
+            .slideDown(2000);
+    });
+});
+
+</script>
+</html>
